@@ -1,15 +1,9 @@
 public class Main {
-  public static void simulateOneDay(int numBirds) {
-    boolean normal = (int)(Math.random()*100+1) + 1;
-    if(normal) {
-      int gramsEaten = (int)(Math.random()*(50 - 10 + 1)+10);
-      int totalEaten = gramsEaten = numBirds;
-      if(totalEaten > currentFood) {
-        currentFood = 0;
-      } else {
-        currentFood -= totalEaten;
-      }
-    } else {
-      currentFood = 0;
+  public static void main(String[] args) {
+    System.out.println("2024 Q1");
+    System.out.println();
+
+    Feeder f1 = new Feeder(2000);
+    System.out.println(f1.simulateManyDays(10,5));
   }
 }
